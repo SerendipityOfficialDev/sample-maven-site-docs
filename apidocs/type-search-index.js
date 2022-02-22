@@ -1,1 +1,1 @@
-typeSearchIndex = [{"p":"it.serendigity.samples.advanced","l":"Advanced"},{"l":"All Classes","url":"allclasses-index.html"},{"p":"it.serendigity.samples.basic","l":"Simple"}]
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"it.serendigity.samples.basic","l":"HighlightJavaDoc"},{"p":"it.serendigity.samples.advanced","l":"JavaDocAdvanced"},{"p":"it.serendigity.samples.basic","l":"JavaDocBasic"},{"p":"it.serendigity.samples.basic","l":"JavaDocSnippet"}];updateSearchResults();

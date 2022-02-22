@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>JavaDocSnippet.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">sample-maven-site</a> &gt; <a href="index.source.html" class="el_package">it.serendigity.samples.basic</a> &gt; <span class="el_source">JavaDocSnippet.java</span></div><h1>JavaDocSnippet.java</h1><pre class="source lang-java linenums">package it.serendigity.samples.basic;
+
+/**
+ * &lt;p&gt;Reference &lt;a href=https://marxsoftware.blogspot.com/2021/09/jdk-18-code-snippets-in-java-api.html&gt;&lt;/a&gt;&lt;/p&gt;
+ * Demonstrates {@code @snippet} Javadoc tag targeted for JDK
+ * as part of JEP 413 (AKA Bug JDK-8201533):
+ * &lt;ul&gt;
+ *     &lt;li&gt;&lt;a href=https://openjdk.java.net/jeps/413&gt;Openjdk jep 413&lt;/a&gt;&lt;/li&gt;
+ *     &lt;li&gt;&lt;a href=https://bugs.openjdk.java.net/browse/JDK-8201533&gt; JDK-8201533&lt;/a&gt;&lt;/li&gt;
+ * &lt;/ul&gt;
+ *
+ * An instance of this class is obtained via my {@link #newInstance()} method
+ * rather than via a constructor.
+ *
+ * {@snippet :
+ *    final SnippetExample instance = SnippetExample.newInstance(); // @highlight substring=&quot;newInstance&quot;
+ *    instance.processIt();
+ * }
+ */
+public class JavaDocSnippet
+{
+    /**
+     * No-arguments constructor not intended for public use.
+     * Use {@link #newInstance()} instead to get an instance of me:
+     * {@snippet :
+     *    final SnippetExample instance = SnippetExample.newInstance();   // @highlight substring=&quot;newInstance&quot;
+     * }
+     */
+    private JavaDocSnippet()
+    {
+    }
+
+    /**
+     * Preferred approach for obtaining an instance of me.
+     *
+     * @return Instance of me.
+     */
+    public JavaDocSnippet newInstance()
+    {
+<span class="nc" id="L40">        return new JavaDocSnippet();</span>
+    }
+
+    /**
+     * Performs valuable processing.
+     */
+    public void processIt()
+    {
+<span class="nc" id="L48">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
