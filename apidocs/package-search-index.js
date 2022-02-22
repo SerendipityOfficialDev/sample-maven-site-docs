@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"it.serendigity.samples.advanced"},{"l":"it.serendigity.samples.basic"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"it.serendigity.samples.advanced"},{"l":"it.serendigity.samples.basic"},{"l":"it.serendigity.samples.highlighter"}];updateSearchResults();

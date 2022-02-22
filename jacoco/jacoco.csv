@@ -1,5 +1,5 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-sample-maven-site,it.serendigity.samples.advanced,JavaDocAdvanced,174,0,4,0,56,0,35,0,33,0
-sample-maven-site,it.serendigity.samples.basic,JavaDocSnippet,5,0,0,0,2,0,2,0,2,0
-sample-maven-site,it.serendigity.samples.basic,HighlightJavaDoc,3,0,0,0,1,0,1,0,1,0
+sample-maven-site,it.serendigity.samples.advanced,JavaDocAdvanced,89,0,2,0,31,0,23,0,22,0
 sample-maven-site,it.serendigity.samples.basic,JavaDocBasic,4,18,1,1,2,4,3,4,2,4
+sample-maven-site,it.serendigity.samples.highlighter,JavaDocSnippet,5,0,0,0,2,0,2,0,2,0
+sample-maven-site,it.serendigity.samples.highlighter,HighlightJavaDoc,3,0,0,0,1,0,1,0,1,0
