@@ -9,16 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <meta name="Date-Revision-yyyymmdd" content="20220222" />
             <meta http-equiv="Content-Language" content="en" />
-        <title>Apache Commons &#x2013; Introduzione</title>
+        <title>Apache Commons &#x2013; </title>
 
-    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="./css/site.css" type="text/css" />
-    <link rel="stylesheet" href="./css/print.css" media="print" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../css/site.css" type="text/css" />
+    <link rel="stylesheet" href="../css/print.css" media="print" />
 
-    <script type="text/javascript" src="./js/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./js/prettify.min.js"></script>
-    <script type="text/javascript" src="./js/site.js"></script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/prettify.min.js"></script>
+    <script type="text/javascript" src="../js/site.js"></script>
 
     
       </head>
@@ -57,19 +57,19 @@
                     <ul class="nav nav-list">
                            <li class="nav-header">Overview</li>
                                         <li class="none">
-                  <a href="intro.html" title="Introduzione">
+                  <a href="../intro.html" title="Introduzione">
     Introduzione</a>
           </li>
-                                                                                           <li class="expanded">
-                  <a href="tutorial.html" title="Tutorial">
+                                                                                                     <li class="expanded">
+                  <a href="../tutorial.html" title="Tutorial">
     Tutorial</a>
                     <ul>
                               <li class="none">
-                  <a href="tutorial/quick-ref.html" title="Quick reference">
+                  <a href="../tutorial/quick-ref.html" title="Quick reference">
     Quick reference</a>
           </li>
-                                 <li class="none">
-                  <a href="tutorial/markdown-cheatsheet.html" title="Markdown reference">
+                                   <li class="none active">
+                  <a href="../tutorial/markdown-cheatsheet.html" title="Markdown reference">
     Markdown reference</a>
           </li>
                    </ul>
@@ -80,11 +80,11 @@
       <ul class="nav nav-list">
                                  <li class="nav-header"><i class="icon-info-sign"></i>Project Documentation</li>
                                                                                                                                                                                                                                                                               <li class="collapsed">
-                  <a href="project-info.html" title="Project Information">
+                  <a href="../project-info.html" title="Project Information">
     Project Information</a>
                     </li>
                                                                                                                                                                                                                                <li class="collapsed">
-                  <a href="project-reports.html" title="Project Reports">
+                  <a href="../project-reports.html" title="Project Reports">
     Project Reports</a>
                     </li>
                  </ul>
@@ -99,8 +99,89 @@
                       </div>
           </td>
           <td class="content">
-                                                                          <h1>Introduzione</h1>
-<p>Esempio di documentazione generata con il <a class="externalLink" href="https://maven.apache.org/plugins/maven-site-plugin/">maven site plugin</a></p>
+                                                                          <p><a class="externalLink" href="https://daringfireball.net/projects/markdown/syntax">Markdown syntax reference</a></p>
+<h1>A First Level Header</h1><section>
+<h2><a name="A_Second_Level_Header"></a>A Second Level Header</h2>
+<p>Now is the time for all good men to come to
+the aid of their country. This is just a
+regular paragraph.</p>
+<p>The quick brown fox jumped over the lazy
+dog's back.</p><section>
+<h3><a name="Header_3"></a>Header 3</h3>
+<blockquote>
+
+<p>This is a blockquote.</p>
+<p>This is the second paragraph in the blockquote.</p></section></section><section>
+<h2><a name="This_is_an_H2_in_a_blockquote"></a>This is an H2 in a blockquote</h2>
+</blockquote>
+<p>#TABLE</p>
+<p>Colons can be used to align columns.</p>
+<table border="0" class="bodyTable">
+<thead>
+
+<tr class="a">
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th></tr>
+</thead><tbody>
+
+<tr class="b">
+<td align="left">col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1600</td></tr>
+<tr class="a">
+<td align="left">col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td></tr>
+<tr class="b">
+<td align="left">zebra stripes</td>
+<td align="center">are neat</td>
+<td align="right">$1</td></tr>
+</tbody>
+</table>
+<p>There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don't need to make the
+raw Markdown line up prettily. You can also use inline Markdown.</p>
+<table border="0" class="bodyTable">
+<thead>
+
+<tr class="a">
+<th>Markdown</th>
+<th>Less</th>
+<th>Pretty</th></tr>
+</thead><tbody>
+
+<tr class="b">
+<td align="left"><i>Still</i></td>
+<td><code>renders</code></td>
+<td><b>nicely</b></td></tr>
+<tr class="a">
+<td align="left">1</td>
+<td>2</td>
+<td>3</td></tr>
+</tbody>
+</table>
+<h1>CODE BLOCK</h1>
+
+<p>This is a normal paragraph:</p>
+
+<div class="source">
+<pre><code>This is a code block.
+</code></pre></div>
+
+<p>One level of indentation&#x2009;&#x2014;&#x2009;4 spaces or 1 tab&#x2009;&#x2014;&#x2009;is removed from each line of the code block. For example, this:
+Here is an example of AppleScript:</p>
+
+<div class="source">
+<pre><code>tell application &quot;Foo&quot;
+    beep
+end tell
+</code></pre></div>
+<p>#LINK
+This is <a class="externalLink" href="http://example.com/" title="Title">an example</a> inline link.</p>
+<p><a class="externalLink" href="http://example.net/">This link</a> has no title attribute.</p>
+<p>##Automatic link
+<a class="externalLink" href="http://example.com/">http://example.com/</a></p></section>
                       </td>
         </tr>
       </table>
