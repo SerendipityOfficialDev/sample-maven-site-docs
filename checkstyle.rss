@@ -74,20 +74,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://serendipityofficialdev.github.io/sample-maven-site-docs/checkstyle.html#it.serendigity.samples.advanced.package-info.java">it/serendigity/samples/advanced/package-info.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  31
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://serendipityofficialdev.github.io/sample-maven-site-docs/checkstyle.html#it.serendigity.samples.highlighter.package-info.java">it/serendigity/samples/highlighter/package-info.java</a>
                 </td>
                 <td>
@@ -98,6 +84,20 @@ under the License.
                 </td>
                 <td>
                   0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://serendipityofficialdev.github.io/sample-maven-site-docs/checkstyle.html#it.serendigity.samples.advanced.package-info.java">it/serendigity/samples/advanced/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  31
                 </td>
               </tr>
                           <tr>
