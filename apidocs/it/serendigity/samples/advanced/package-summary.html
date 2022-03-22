@@ -102,11 +102,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block"><p> Esempio di Javadoc a livello di package preso da <a href="https://commons.apache.org/proper/commons-lang/">apache.commons.lang</a>
 
  </p>
- <p>Provides highly reusable static utility methods, chiefly concerned with adding value to the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java/lang/package-summary.html?is-external=true" class="externalLink"><code>java.lang</code></a> classes.
+ <p>Provides highly reusable static utility methods, chiefly concerned with adding value to the <code> java.lang</code> classes.
  Most of these classes are immutable and thus thread-safe.
- However <code>org.apache.commons.lang3.CharSet</code> is not currently guaranteed thread-safe under all circumstances.</p>
+ However <code> org.apache.commons.lang3.CharSet</code> is not currently guaranteed thread-safe under all circumstances.</p>
 
- <p>The top level package contains various Utils classes, whilst there are various subpackages including <code>org.apache.commons.lang3.math</code>, <code>org.apache.commons.lang3.concurrent</code> and <code>org.apache.commons.lang3.builder</code>.
+ <p>The top level package contains various Utils classes, whilst there are various subpackages including <code> org.apache.commons.lang3.math</code>, <code> org.apache.commons.lang3.concurrent</code> and <code> org.apache.commons.lang3.builder</code>.
  Using the Utils classes is generally simplicity itself.
  They are the equivalent of global functions in another language, a collection of stand-alone, thread-safe, static methods.
  In contrast, subpackages may contain interfaces which may have to be implemented or classes which may need to be extended to get the full functionality from the code.
@@ -125,23 +125,23 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  <h2>String manipulation - StringUtils, StringEscapeUtils, RandomStringUtils</h2>
 
  <p>Lang has a series of String utilities.
- The first is <code>org.apache.commons.lang3.StringUtils</code>, oodles and oodles of functions which tweak, transform, squeeze and cuddle <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>java.lang.Strings</code></a>.
- In addition to StringUtils, there are a series of other String manipulating classes; <code>org.apache.commons.lang3.RandomStringUtils</code> and <code>StringEscapeUtils</code>.
+ The first is <code> org.apache.commons.lang3.StringUtils</code>, oodles and oodles of functions which tweak, transform, squeeze and cuddle <code> java.lang.String java.lang.Strings</code>.
+ In addition to StringUtils, there are a series of other String manipulating classes; <code> org.apache.commons.lang3.RandomStringUtils</code> and <code> org.apache.commons.lang3.StringEscapeUtils StringEscapeUtils</code>.
  RandomStringUtils speaks for itself.
  It's provides ways in which to generate pieces of text, such as might be used for default passwords.
  StringEscapeUtils contains methods to escape and unescape Java, JavaScript, JSON, HTML and XML.</p>
 
  <p>These are ideal classes to start using if you're looking to get into Lang.
- StringUtils' <code>org.apache.commons.lang3.StringUtils#capitalize(String)</code>, <code>org.apache.commons.lang3.StringUtils#substringBetween(String, String)</code>/<code>Before</code>/<code>After</code>, <code>org.apache.commons.lang3.StringUtils#split(String)</code> and <code>org.apache.commons.lang3.StringUtils#join(Object[])</code> are good methods to begin with.</p>
+ StringUtils' <code> org.apache.commons.lang3.StringUtils#capitalize(String)</code>, <code> org.apache.commons.lang3.StringUtils#substringBetween(String, String)</code>/<code> org.apache.commons.lang3.StringUtils#substringBefore(String, String) Before</code>/<code> org.apache.commons.lang3.StringUtils#substringAfter(String, String) After</code>, <code> org.apache.commons.lang3.StringUtils#split(String)</code> and <code> org.apache.commons.lang3.StringUtils#join(Object[])</code> are good methods to begin with.</p>
 
  <h2>Character handling - CharSetUtils, CharSet, CharRange, CharUtils</h2>
 
  <p>In addition to dealing with Strings, it's also important to deal with chars and Characters.
- <code>org.apache.commons.lang3.CharUtils</code> exists for this purpose, while <code>org.apache.commons.lang3.CharSetUtils</code> exists for set-manipulation of Strings.
+ <code> org.apache.commons.lang3.CharUtils</code> exists for this purpose, while <code> org.apache.commons.lang3.CharSetUtils</code> exists for set-manipulation of Strings.
  Be careful, although CharSetUtils takes an argument of type String, it is only as a set of characters.
  For example, <code>CharSetUtils.delete("testtest", "tr")</code> will remove all t's and all r's from the String, not just the String "tr". </p>
 
- <p><code>org.apache.commons.lang3.CharRange</code> and <code>org.apache.commons.lang3.CharSet</code> are both used internally by CharSetUtils, and will probably rarely be used.</p>
+ <p><code> org.apache.commons.lang3.CharRange</code> and <code> org.apache.commons.lang3.CharSet</code> are both used internally by CharSetUtils, and will probably rarely be used.</p>
 
  <h2>JVM interaction - SystemUtils, CharEncoding</h2>
 
@@ -150,7 +150,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  Having pushed out a few JDK 1.3 bits that had slipped in (<code>Collections.EMPTY_MAP</code> is a classic offender), I then found that one of the Unit Tests was dying mysteriously under JDK 1.2, but ran fine under JDK 1.3.
  There was no obvious solution and I needed to move onwards, so the simple solution was to wrap that particular test in a <code>if (SystemUtils.isJavaVersionAtLeast(1.3f)) {</code>, make a note and move on.</p>
 
- <p>The <code>org.apache.commons.lang3.CharEncoding</code> class is also used to interact with the Java environment and may be used to see which character encodings are supported in a particular environment. </p>
+ <p>The <code> org.apache.commons.lang3.CharEncoding</code> class is also used to interact with the Java environment and may be used to see which character encodings are supported in a particular environment. </p>
 
  <h2>Serialization - SerializationUtils, SerializationException</h2>
 
@@ -159,12 +159,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 
  <h3>Assorted functions - ObjectUtils, ClassUtils, ArrayUtils, BooleanUtils</h3>
 
- <p>Would you believe it, <code>org.apache.commons.lang3.ObjectUtils</code> contains handy functions for Objects, mainly null-safe implementations of the methods on <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Object</code></a>.</p>
+ <p>Would you believe it, <code> org.apache.commons.lang3.ObjectUtils</code> contains handy functions for Objects, mainly null-safe implementations of the methods on <code> java.lang.Object</code>.</p>
 
- <p><code>org.apache.commons.lang3.ClassUtils</code> is largely a set of helper methods for reflection.
+ <p><code> org.apache.commons.lang3.ClassUtils</code> is largely a set of helper methods for reflection.
  Of special note are the comparators hidden away in ClassUtils, useful for sorting Class and Package objects by name; however they merely sort alphabetically and don't understand the common habit of sorting <code>java</code> and <code>javax</code> first.</p>
 
- <p>Next up, <code>org.apache.commons.lang3.ArrayUtils</code>.
+ <p>Next up, <code> org.apache.commons.lang3.ArrayUtils</code>.
  This is a big one with many methods and many overloads of these methods so it is probably worth an in depth look here.
  Before we begin, assume that every method mentioned is overloaded for all the primitives and for Object.
  Also, the short-hand 'xxx' implies a generic primitive type, but usually also includes Object. </p>
@@ -184,7 +184,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
   <li>Primitive to primitive wrapper conversion is handled by the <code>toObject(xxx[])</code> and <code>toPrimitive(Xxx[])</code> methods. </li>
  </ul>
 
- <p>Lastly, <code>org.apache.commons.lang3.ArrayUtils#toMap(Object[])</code> is worthy of special note.
+ <p>Lastly, <code> org.apache.commons.lang3.ArrayUtils#toMap(Object[])</code> is worthy of special note.
  It is not a heavily overloaded method for working with arrays, but a simple way to create Maps from literals. </p>
 
  <h4>Using toMap</h4>
@@ -198,12 +198,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  </code>
  </pre>
 
- <p>Our final util class is <code>org.apache.commons.lang3.BooleanUtils</code>.
- It contains various Boolean acting methods, probably of most interest is the <code>org.apache.commons.lang3.BooleanUtils#toBoolean(String)</code> method which turns various positive/negative Strings into a Boolean object, and not just true/false as with Boolean.valueOf.</p>
+ <p>Our final util class is <code> org.apache.commons.lang3.BooleanUtils</code>.
+ It contains various Boolean acting methods, probably of most interest is the <code> org.apache.commons.lang3.BooleanUtils#toBoolean(String)</code> method which turns various positive/negative Strings into a Boolean object, and not just true/false as with Boolean.valueOf.</p>
 
  <h2>Flotsam - BitField, Validate</h2>
  <p>On reaching the end of our package, we are left with a couple of classes that haven't fit any of the topics so far. </p>
- <p>The <code>org.apache.commons.lang3.BitField</code> class provides a wrapper class around the classic bitmask integer, whilst the <code>org.apache.commons.lang3.Validate</code> class may be used for assertions (remember, we support Java 1.2). </p></div>
+ <p>The <code> org.apache.commons.lang3.BitField</code> class provides a wrapper class around the classic bitmask integer, whilst the <code> org.apache.commons.lang3.Validate</code> class may be used for assertions (remember, we support Java 1.2). </p></div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0</dd>
