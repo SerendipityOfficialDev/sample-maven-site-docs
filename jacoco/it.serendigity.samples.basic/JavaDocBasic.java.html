@@ -70,5 +70,22 @@ import java.net.URL;
 	public Image getMethodWithHTMLTag( URL url, String name ) {
 <span class="nc" id="L71">		return null;</span>
 	}
+	  /**
+		 * Compone la stringa di saluto per i partecipanti alla conferenza.
+		 * &lt;p&gt;
+		 * Link alla conferenza
+		 * &lt;a href=
+		 * &quot;https://events.codemotion.com/conferences/online/2022/online-tech-conference-2022-italian-edition-spring/speakers&quot;&gt;Codemotion
+		 * 2022&lt;/a&gt;
+		 * &lt;/p&gt;
+		 *
+		 * @param name il nome della persona a cui rivolgere il saluto
+		 * @return stringa di saluto
+		 */
+		public String retrieveHelloString( String name ) {
+			//
+<span class="nc" id="L87">			return &quot;Hello &quot; + name;</span>
+		}
+
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
